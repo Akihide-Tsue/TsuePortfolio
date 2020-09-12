@@ -1,8 +1,7 @@
 const path = require('path');
 
-/**
+/*
  * Configure your Gatsby site with this file.
- *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
@@ -23,9 +22,7 @@ module.exports = {
       }
     },
     'gatsby-transformer-remark',
-    `gatsby-transformer-sharp`, 
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`
-]
+  ]
 }
-
-
