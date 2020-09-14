@@ -1,153 +1,165 @@
-@media(min-width: 700px) {
-    .main {
-    
-        display: flex;
-        flex-direction: row;
-
-    }
-
- 
+@media (min-width: 700px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
-h2 {
-    font-weight: normal;
+.aboutTitle {
+  text-align: center;
+  font-weight: normal;
 }
 .logoContainer {
-    text-align: center;
-    
-
-.logo {
+  text-align: center;
+  .logo {
     max-width: 50px;
     display: inline;
-    padding: .8rem;
-}
+    padding: 0.8rem;
+  }
 }
 
-.izquierda {
+.first-prof {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  flex: 1;
+  padding: 1rem;
+  // align-self: center;
+
+  .img {
+    border-radius: 50%;
+    margin-bottom: 200px;
+  }
+  .imagen {
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+  }
+  .texto {
     display: flex;
     flex-direction: column;
-    font-size:0.8rem;
-    flex:1;
-    margin: auto;
-    padding: 1rem;
     align-self: center;
-    
-    .img {
-        border-radius: 100%;
+    justify-content: center;
+        margin: 0;
+        padding: 0;
+    .icon {
+      flex-direction: column;
+      float: left;
+      font-weight: 1500;
+              margin: 0;
+        padding: 0;
+      .fas {
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+      }
     }
-    .imagen {
-        justify-content: center;
-        flex-direction: column;
-        align-self: center;
-        width:100%;
-    }
-    .texto {
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        justify-content: center;
-        
-    }
+  }
 
-    .iconos {
-        flex-direction: column;
-        float: left;
-        
-        
-        p { 
-            padding: 0rem 1rem 0;
-            display: inline-block;
-        }
+  .icon {
+    flex-direction: column;
+    float: left;
+    font-weight: 1500;
+    .i {
+      padding: 0;
     }
-    
+    p {
+      margin: 0;
+      display: inline-block;
+    }
+  }
 }
 
-.derecha {
-    padding: 1.4rem;
-    flex-direction: row;
-    flex:2;
-    font-size: 1.2rem;
-    text-align: justify;
-    margin: auto;
-    
-    
+.article {
+  padding: 1.4rem;
+  flex-direction: row;
+  flex: 2;
+  font-size: 1.2rem;
+  text-align: justify;
+  margin: auto;
 }
 
 .social {
-
-    font-size: 1.4rem;
-    color: black;
-    padding: 0 1rem;
+  font-size: 1.4rem;
+  color: black;
+  padding: 0 1rem;
 }
 
 .social:hover {
-
-    color:cornflowerblue;
+  color: cornflowerblue;
 }
-
-
 
 .social-container {
+  text-align: center;
+}
+
+@media (max-width: 1050px) {
+  .firstProf {
+    margin: 0;
+    .img {
+      margin-bottom: 0;
+    }
+  }
+  .article {
+    font-size: 1rem;
+  }
+
+  .social {
+    font-size: 1rem;
+  }
+
+  .icon {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .aboutTitle {
     text-align: center;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .icon {
+    font-size: 0.8rem;
+  }
 }
 
-@media(max-width: 1050px) {
+// @media (max-width: 400px) {
+//   .aboutTitle {
+//     margin-block-start: 0;
+//     margin-block-end: 0;
+//   }
+//   .firstProf {
+//     margin: 0;
+//     padding: 0;
+//   }
+//   .icon {
+//     font-size: 0.6rem;
+//   }
+// }
 
-    .derecha {
-       
-        font-size: 1rem;
-       
-        
-    }
+@media (max-width: 550px) {
+  .aboutTitle {
+    text-align: center;
+    white-space: nowrap;
+    margin: 0 !important;
+    margin-block-end: 0 !important;
+  }
+  .firstProf {
+    margin: 0;
+  }
+  .article {
+    padding: 0;
+    font-size: 0.875rem;
+  }
 
-    .social {
-
-        font-size: 1rem;
-        
-    }
-
-    .iconos {
-        font-size: .8rem;
-    }
-
-}
-
-@media(max-width: 900px) {
-
- h2 {
-     text-align: center;
- }
-
- .iconos {
-    font-size: .8rem;
-}
-}
-
-
-@media(max-width: 400px) {
-
-    .iconos {
-        font-size: .6rem;
-    }
-
-}
-
-
-
-
-@media(max-width: 550px) {
-
-    .derecha {
-       
-        font-size: .875rem;
-       
-        
-    }
-
-    .social {
-
-        font-size: .875rem;
-        
-    }
-
+  .social {
+    font-size: 0.875rem;
+  }
 }

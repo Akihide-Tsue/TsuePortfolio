@@ -26,13 +26,15 @@ h1 {
 .icons {
   padding: 1rem;
   text-align: right;
-  margin-right:50px;
+  margin-right: 50px;
+  height: 40px;
   a {
     color: black;
     &:visited {
       color: black;
     }
   }
+
   .tooltip {
     position: relative;
   }
@@ -71,14 +73,14 @@ h1 {
   .fab {
     -webkit-transition: -webkit-transform 0.2s ease-in-out;
     transition: transform 0.2s ease-in-out;
-
     &:hover {
       -webkit-transform: rotate(30deg);
       transform: rotate(30deg);
     }
   }
-  .original {
-    width: 15px;
+  .svgIcon {
+    width: 42px;
+    margin-bottom: -10px;
     -webkit-transition: -webkit-transform 0.2s ease-in-out;
     transition: transform 0.2s ease-in-out;
 
@@ -95,8 +97,13 @@ i {
 }
 
 .header-main {
-  padding: 2rem 20rem 2rem 20rem;
+  padding: 1rem 20rem 1rem 20rem;
   text-align: center;
+  .headerIcon {
+    width: 70%;
+    height: auto;
+    margin: 20px;
+  }
 }
 
 .content-main {
@@ -108,13 +115,41 @@ i {
   margin-bottom: 1rem;
 
   a {
-    padding: 0 1rem 1rem 1rem;
+    padding: 6px;
+    text-decoration: none;
+    background-color: #034bfe;
+    color: #fff;
+    border-radius: 5px;
+    margin: 3px;
+    &:hover {
+      opacity: 0.8;
+      transition: 0.2s;
+    }
   }
+}
+
+//typewriter-effect
+.IamText {
+  width: 110px;
+  white-space: nowrap;
+}
+.before-typewriting-text {
+  display: flex;
+  flex-direction: row;
+  font-size: 2.8rem;
+  color: black;
+  margin-left: 20px;
 }
 
 @media (max-width: 1400px) {
   .header-main {
+    text-align: center;
     padding: 0;
+    .headerIcon {
+      width: 70%;
+      height: auto;
+      margin: 20px;
+    }
   }
 
   .content-main {
@@ -122,13 +157,48 @@ i {
   }
 }
 
+//小画面
 @media (max-width: 650px) {
   .header-main {
+    text-align: center;
     padding: 0;
+    .headerIcon {
+      width: 220px;
+      height: auto;
+      margin: 15px;
+    }
+  }
+  //上部リンク
+  .pages-link {
+    white-space: nowrap;
+    padding: 0;
+    .a {
+      font-size: 0.7rem;
+    }
+  }
+  .icons {
+    white-space: nowrap;
+    text-align: left;
+    // margin-right: 50px;
   }
 
   .content-main {
     padding-bottom: 5rem;
+  }
+  .IamText {
+    width: 55px;
+    white-space: nowrap;
+    font-size: 1.5rem;
+  }
+  .before-typewriting-text {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    color: black;
+    margin-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 

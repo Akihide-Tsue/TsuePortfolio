@@ -11,10 +11,10 @@ function renderFolio() {
 
             <div key={'div' + idx} className="tab">
                 <input key={'index' + idx} type="checkbox" id={idx + title} />
-                <label key={'label' + idx} className="tab-label" for={idx + title}>  <span key={'pTit' + idx} className='folio-title'>{title} </span>
+                <label key={'label' + idx} className="tab-label" htmlFor={idx + title}>  <span key={'pTit' + idx} className='folio-title'>{title} </span>
                     <span key={'dot' + idx} className='folio-title'>· </span>
                     <span key={'pSinop' + idx} className='folio-sinopsis'>{sinopsis}</span></label>
-                <div key={'tab' + idx} class="tab-content">
+                <div key={'tab' + idx} className="tab-content">
                     <img alt="nicasia" src={img} />
                     {desc}
                     <span className="repolinks" key={'repo' + idx}><a key={'repoLink' + idx} href={repo}>Github Repo</a></span>
@@ -35,7 +35,7 @@ const Index = () => {
 
     return (
         <Layout>
-            <h1 className="opener">I am developer</h1>
+            <h1 className="opener">Portfolio</h1>
             <p className="subtitle">These are a few of my projects. Open up for repo and live version!</p>
             {renderFolio()}
         </Layout>

@@ -3,9 +3,7 @@ import './footer.styles.scss';
 
 const Footer = () => {
     return (
-        <div className='footer'>
-            <p>Developer Name © - 2019 </p>
-        </div>
+        <div className='footer'>© 2020 Tsue.com</div>
     )
 }
 
