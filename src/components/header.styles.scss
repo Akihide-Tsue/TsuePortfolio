@@ -108,9 +108,18 @@ i {
     margin: 20px;
   }
 }
-
+body {
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  // min-height: 100vh;
+}
 .content-main {
-  padding: 0 20rem 5rem 20rem;
+  padding: 0 20rem 5rem 25px;
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  min-height: 58vh;
 }
 
 .pages-link {
@@ -160,6 +169,7 @@ i {
 
   .content-main {
     padding: 0 2rem 3rem;
+    height: 100%;
   }
 }
 
@@ -189,6 +199,7 @@ i {
 
   .content-main {
     padding-bottom: 5rem;
+    height: 100%;
   }
   .IamText {
     width: 55px;
