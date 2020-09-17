@@ -20,18 +20,25 @@ const About = (props) => {
     console.log(query)
     return (
         <Layout>
-            <h2 className="aboutTitle">Profile</h2>
+            <h1 className="opener">Profile</h1>
 
             <div className={aboutStyle.main}>
                 <div className={aboutStyle.firstProf}>
-                    <div className={aboutStyle.imagen}> <Img className={aboutStyle.img} alt="profilePhoto" fluid={props.data.file.childImageSharp.fluid} /></div>
-                    <div className={aboutStyle.texto}>
+                    <div className={aboutStyle.imagen}>
+                        <Img className={aboutStyle.img} alt="profilePhoto" fluid={props.data.file.childImageSharp.fluid} />
+                    </div>
 
-                        <div className={aboutStyle.icon}><i className="fas fa-map-marker-alt fa-sm"></i><p>Osaka, Japan</p></div>
-                        <div className={aboutStyle.icon}><i className="fas fa-graduation-cap fa-sm"></i><p> Tokyo University Of Agriculture</p></div>
+                    <div className={aboutStyle.textBox}>
+                        <div className={aboutStyle.icon}>
+                            {/* <i className="fas fa-map-marker-alt fa-sm" /> */}
+                            <div className="iconLabel">■ Osaka, Japan</div>
+                        </div>
+                        <div className={aboutStyle.icon}>
+                            {/* <i className="fas fa-graduation-cap fa-sm" /> */}
+                            <div className="iconLabel">■ Tokyo University Of Agriculture</div>
+                        </div>
                         {/* <div className={aboutStyle.iconos}><i className="fas fa-code fa-sm"></i><p>HTML, JS, CSS, noSQL</p></div> */}
                         {/* <div className={aboutStyle.iconos}><i className="fas fa-language fa-sm"></i><p>English, Spanish, Portuguese and Latin</p></div> */}
-
                     </div>
 
                 </div>
@@ -68,7 +75,7 @@ const About = (props) => {
                 </div>
 
             </div>
-        </Layout>
+        </Layout >
     )
 }
 

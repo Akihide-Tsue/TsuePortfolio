@@ -1,7 +1,5 @@
 const path = require('path');
 
-
-
 module.exports.onCreateNode = ({node, actions}) => {
     const {createNodeField} = actions;
 
@@ -13,7 +11,6 @@ module.exports.onCreateNode = ({node, actions}) => {
             value: slug
         })
     }
-    
 }
 
 
@@ -42,6 +39,4 @@ module.exports.createPages = async ({graphql, actions}) => {
             }
         })
     } )
-
 }
-

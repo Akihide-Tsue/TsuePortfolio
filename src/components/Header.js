@@ -37,19 +37,20 @@ const Header = () => {
                     <span className="attr">Mechanic</span> */}
 
 
-                <span className="pages-link"><Link to="/">Portfolio</Link> |
-                        <Link to="/blog">Blog</Link> |
-                        <Link to="/about">About</Link>
+                <span className="pages-link">
+                    <Link to="/">Portfolio</Link>
+                    <Link to="/blog">Blog</Link>
+                    <Link to="/about">About</Link>
                 </span>
                 <div className="icons">
                     <a href='https://github.com/Akihide-Tsue' target="_blank" rel="noopener noreferrer"
                         className="tooltip" data-tooltip="GitHub"><i className="fab fa-github"></i></a>
                     <a href='https://twitter.com/Tsue_engineer' target="_blank" rel="noopener noreferrer"
                         className="tooltip" data-tooltip="Twitter"><i className="fab fa-twitter"></i></a>
-                    <a href='https://www.wantedly.com/users/118829577?profile_v1=true' target="_blank" rel="noopener noreferrer"
+                    <a href='https://www.wantedly.com/secret_profiles/Gqck-YFxgw84hG70w4lrmsiybNAaEJls' target="_blank" rel="noopener noreferrer"
                         className="tooltip" data-tooltip="Wantedly"><img alt="wantedly" className="svgIcon" src={wantedly} /></a>
                     {/* TODO 履歴書*/}
-                    <a href='TODO' target="_blank" rel="noopener noreferrer"
+                    <a href='404' target="_blank" rel="noopener noreferrer"
                         className="tooltip" data-tooltip="resume"><i className="fab far fa-file-alt"></i></a>
                 </div>
 

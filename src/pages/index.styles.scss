@@ -1,13 +1,19 @@
-*{
-    font-family: 'Open Sans', sans-serif;
+* {
+  font-family: "Open Sans", sans-serif;
 }
-.opener{
-    font-size: 2.5rem;
+.opener {
+  font-size: 2.5rem;
+  text-align: center;
+}
+//各ブログのタイトル
+.eachBlogTitle {
+  font-size: 1.5rem;
+  text-decoration: underline;
 }
 
 .subtitle {
-    margin-top: -10px;
-    padding-bottom: 1.3rem;
+  margin-top: -10px;
+  padding-bottom: 1.3rem;
 }
 
 .folio-title {
@@ -16,18 +22,15 @@
   padding-right: 0.4rem;
   font-size: 1.1rem;
   padding-bottom: 1rem;
-  
 }
 
 .folio-sinopsis {
   display: inline;
-  color: #9B9696;
+  color: #9b9696;
   font-size: 1.1rem;
-  
 }
 
 .container {
-
   padding: 20rem 20rem;
 }
 
@@ -37,26 +40,35 @@ input {
   z-index: -1;
 }
 
-.tabs {
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 4px -2px rgba(0,0,0,0.5);
-  
-}
+// .tabs {
+//   border-radius: 8px;
+//   overflow: hidden;
+//   box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+// }
 
+//ポートフォリオ各アイテム
 .tab {
   width: 100%;
   color: black;
   overflow: hidden;
-  font-size: .9rem;
-  img{
-    max-width:300px;
-}
+  font-size: 0.9rem;
+  margin-bottom: 7px;
+  background-color: rgb(238, 238, 238);
+  border-radius: 5px;
+  &:hover {
+    box-shadow: 0px 2px 6px 0px rgb(122, 122, 122);
+    transition: all 0.2s;
+  }
+  img {
+    max-width: 300px;
+  }
   &-label {
     display: flex;
-    
+    box-shadow: 0px 2px 9px 0px rgb(122, 122, 122);
     &:hover {
-        color: cornflowerblue;
+      background-color: #f7f7f7;
+      box-shadow: 2px 2px 8px 0px rgb(90, 90, 90);
+      transition: all 0.15s;
     }
     cursor: pointer;
     /* Icon */
@@ -64,20 +76,19 @@ input {
       width: 1em;
       height: 1em;
       text-align: center;
-      transition: all .35s;
+      transition: all 0.35s;
     }
   }
   &-content {
     max-height: 0;
     background-color: transparent;
-    transition: all .35s;
+    transition: all 0.35s;
   }
   &-close {
     display: flex;
     justify-content: flex-end;
     font-size: 0.75em;
     cursor: pointer;
-  
   }
 }
 
@@ -91,58 +102,57 @@ input:checked {
   ~ .tab-content {
     max-height: 100vh;
     padding: 1em;
-    width:90%;
-    font-size: .9rem;
-    img{
-        max-width:300px;
-        float: left;
-        padding:0 25px 25px 0;
+    width: 90%;
+    font-size: 0.9rem;
+
+    img {
+      max-width: 300px;
+      float: left;
+      padding: 0 25px 25px 0;
     }
   }
 }
 
 .repolinks {
-    a { 
+  a {
     display: block;
     margin-top: 10px;
     text-decoration: none;
     &:hover {
-        color: cornflowerblue;
+      color: #1403fe;
     }
     &:visited {
-        text-decoration: none;
+      text-decoration: none;
     }
-}
-}
-
-
-@media(max-width:800px) {
-
-    .folio-title {
-        
-        font-size: 0.9rem;
-      }
-
-      .folio-sinopsis {
-        font-size: 0.9rem;
-      }
-      
-    
+  }
 }
 
+@media (max-width: 800px) {
+  .folio-title {
+    font-size: 0.9rem;
+  }
 
+  .folio-sinopsis {
+    font-size: 0.9rem;
+  }
+}
 
-@media(max-width:500px) {
+@media (max-width: 500px) {
+  .folio-title {
+    font-size: 0.75rem;
+    padding-right: 1rem;
+  }
 
-    .folio-title {
-        
-        font-size: 0.75rem;
-        padding-right: 1rem;
-      }
+  //各ブログのタイトル
+  .blogPageContent {
+    padding: 0;
+  }
+  .eachBlogTitle {
+    font-size: 1rem;
+    text-decoration: underline;
+  }
 
-      .folio-sinopsis {
-        font-size: 0.75rem;
-      }
-      
-    
+  .folio-sinopsis {
+    font-size: 0.75rem;
+  }
 }

@@ -78,9 +78,12 @@ h1 {
       transform: rotate(30deg);
     }
   }
+  //wantedlyアイコン
   .svgIcon {
     width: 42px;
     margin-bottom: -10px;
+    margin-left: 5px;
+    margin-right: 3px;
     -webkit-transition: -webkit-transform 0.2s ease-in-out;
     transition: transform 0.2s ease-in-out;
 
@@ -100,29 +103,32 @@ i {
   padding: 1rem 20rem 1rem 20rem;
   text-align: center;
   .headerIcon {
-    width: 70%;
+    width: 60%;
     height: auto;
     margin: 20px;
   }
 }
 
 .content-main {
-  padding: 2rem 20rem 5rem 20rem;
+  padding: 0 20rem 5rem 20rem;
 }
 
 .pages-link {
   padding: 0 2rem 0 2rem;
   margin-bottom: 1rem;
 
+  //上部の3つボタン
   a {
-    padding: 6px;
+    padding: 5px;
     text-decoration: none;
-    background-color: #034bfe;
+    background-color: #0703fe;
     color: #fff;
     border-radius: 5px;
-    margin: 3px;
+    margin: 4px;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
     &:hover {
       opacity: 0.8;
+      background-color: #2167e9;
       transition: 0.2s;
     }
   }
@@ -146,14 +152,14 @@ i {
     text-align: center;
     padding: 0;
     .headerIcon {
-      width: 70%;
+      width: 60%;
       height: auto;
       margin: 20px;
     }
   }
 
   .content-main {
-    padding: 2rem 4rem 5rem;
+    padding: 0 2rem 3rem;
   }
 }
 
@@ -163,8 +169,7 @@ i {
     text-align: center;
     padding: 0;
     .headerIcon {
-      width: 220px;
-      height: auto;
+      width: 60%;
       margin: 15px;
     }
   }
@@ -178,8 +183,8 @@ i {
   }
   .icons {
     white-space: nowrap;
-    text-align: left;
-    // margin-right: 50px;
+    text-align: center;
+    margin-right: 0;
   }
 
   .content-main {
@@ -206,6 +211,6 @@ i {
   text-decoration: none;
   color: black;
   &:hover {
-    color: cornflowerblue;
+    color: #1403fe;
   }
 }

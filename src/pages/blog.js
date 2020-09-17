@@ -24,24 +24,19 @@ const Blog = () => {
     `)
 
   const posts = postsQuery.allMarkdownRemark.edges.map((posts) => {
-
-    return (<ul>
+    return (<ul className="blogPageContent">
       <Link className='nodecor' to={`/blog/${posts.node.fields.slug}`}  >
-        <h1 className="opener">{posts.node.frontmatter.title}</h1>
+        <div className="eachBlogTitle">{posts.node.frontmatter.title}</div>
         <p>{posts.node.frontmatter.date}</p>
       </Link>
       <p>{posts.node.frontmatter.sinopsis}</p>
     </ul>
     )
-
   })
-
-
 
   return (
     <Layout>
-
-      <h1 className="opener">blog</h1>
+      <h1 className="opener">Blog</h1>
       {posts}
     </Layout>
   )

@@ -1,16 +1,13 @@
 ---
-title: 'Second post'
-date:  '2019-10-02'
-sinopsis: "Second Post, ble ble ble ble ble"
-
-
+title: '作成中'
+date:  '2020/9/5'
+sinopsis: "a"
 ---
-
-
-
 This is the second post
 
 ## Topics
 
 1. What you want
 2. Whatever ya want
+
+ ### [戻る](/blog)

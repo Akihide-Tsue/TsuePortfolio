@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from './components/Layout';
-import {graphql} from 'gatsby';
-
+import { graphql } from 'gatsby';
 
 //export query so gatsby can grab it as a prop
 export const query = graphql`
@@ -26,14 +25,13 @@ query (
 `
 
 const blogTemplate = (props) => {
- return (
+  return (
     <Layout>
-
-        <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-        <p>{props.data.markdownRemark.frontmatter.date}</p>
-        <div dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}></div>
+      <h2>{props.data.markdownRemark.frontmatter.title}</h2>
+      <p>{props.data.markdownRemark.frontmatter.date}</p>
+      <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}></div>
     </Layout>
- )
+  )
 }
 
 export default blogTemplate
