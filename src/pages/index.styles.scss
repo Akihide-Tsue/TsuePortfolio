@@ -47,101 +47,207 @@ input {
 // }
 
 //ポートフォリオ各アイテム
-.tab {
-  width: 100%;
-  color: black;
-  overflow: hidden;
-  font-size: 0.9rem;
-  margin-bottom: 7px;
-  background-color: rgb(238, 238, 238);
-  border-radius: 5px;
+.cssGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 1fr;
+  grid-gap: 0.8em;
+  // padding: 0.8em;
+  // margin: 0 0 2em;
+}
+.cssGrid > .l-wrapper {
+  margin: 1rem auto;
+  background: #ddd;
+  overflow: auto;
+  min-width: 0;
+  padding: 1em;
+  background-color: #eeee;
   &:hover {
-    box-shadow: 0px 2px 6px 0px rgb(122, 122, 122);
-    transition: all 0.2s;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    transition: all 0.5s;
   }
-  img {
-    max-width: 300px;
-  }
-  &-label {
-    display: flex;
-    box-shadow: 0px 2px 9px 0px rgb(122, 122, 122);
-    &:hover {
-      background-color: #f7f7f7;
-      box-shadow: 2px 2px 8px 0px rgb(90, 90, 90);
-      transition: all 0.15s;
-    }
-    cursor: pointer;
-    /* Icon */
-    &::after {
-      width: 1em;
-      height: 1em;
-      text-align: center;
-      transition: all 0.35s;
-    }
-  }
-  &-content {
-    max-height: 0;
-    background-color: transparent;
-    transition: all 0.35s;
-  }
-  &-close {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 0.75em;
-    cursor: pointer;
-  }
-}
-
-// :checked
-input:checked {
-  + .tab-label {
-    &::after {
-      transform: rotate(90deg);
-    }
-  }
-  ~ .tab-content {
-    max-height: 100vh;
-    padding: 1em;
-    width: 90%;
-    font-size: 0.9rem;
-
-    img {
-      max-width: 300px;
-      float: left;
-      padding: 0 25px 25px 0;
-    }
-  }
-}
-
-.repolinks {
-  a {
-    display: block;
-    margin-top: 10px;
+  .card {
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.16);
+    color: #212121;
     text-decoration: none;
-    &:hover {
-      color: #1403fe;
+    background-color: #eeee;
+    &_header {
+      display: flex;
+      flex-wrap: wrap;
     }
-    &:visited {
+    &_title {
+      padding: 1rem 1.5rem 0;
+      font-size: 1.6rem;
+      order: 1;
+      margin-bottom: 0.6rem;
+      font-weight: bold;
       text-decoration: none;
     }
+    &_thumbnail {
+      margin: 0;
+      order: 0;
+    }
+    &_image {
+      width: 100%;
+    }
+    &_body {
+      padding: 0 1.5rem;
+    }
+    &_text {
+      font-size: 0.8rem;
+      text-align: center;
+      text-decoration: none;
+      padding-bottom: 0;
+    }
+    &_live {
+      font-size: 0.8rem;
+      text-align: center;
+      text-decoration: none;
+      padding-bottom: 0;
+      padding-top: 10px;
+    }
+    &_text + &_text {
+      margin-top: 0.5rem;
+    }
+    &_text2 {
+      font-size: 0.8rem;
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+    &_footer {
+      padding: 1rem;
+      border-top: 1px solid #ddd;
+    }
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+      text-align: center;
+    }
+    .button a {
+      text-decoration: none;
+    }
+    .button-compact {
+      padding: 0.5rem 1rem;
+      border-radius: 0.25rem;
+      background-color: #252a2d;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      &:hover,
+      &:focus {
+        background-color: #2167e9;
+        transition: 0.1s;
+      }
+    }
   }
 }
 
-@media (max-width: 800px) {
-  .folio-title {
-    font-size: 0.9rem;
-  }
+// .tab {
+//   width: 100%;
+//   color: black;
+//   overflow: hidden;
+//   font-size: 0.9rem;
+//   margin-bottom: 7px;
+//   background-color: rgb(238, 238, 238);
+//   border-radius: 5px;
+//   &:hover {
+//     box-shadow: 0px 2px 6px 0px rgb(122, 122, 122);
+//     transition: all 0.2s;
+//   }
+//   img {
+//     max-width: 300px;
+//   }
+//   &-label {
+//     display: flex;
+//     box-shadow: 0px 2px 9px 0px rgb(122, 122, 122);
+//     &:hover {
+//       background-color: #f7f7f7;
+//       box-shadow: 2px 2px 8px 0px rgb(90, 90, 90);
+//       transition: all 0.15s;
+//     }
+//     cursor: pointer;
+//     /* Icon */
+//     &::after {
+//       width: 1em;
+//       height: 1em;
+//       text-align: center;
+//       transition: all 0.35s;
+//     }
+//   }
+//   &-content {
+//     max-height: 0;
+//     background-color: transparent;
+//     transition: all 0.35s;
+//   }
+//   &-close {
+//     display: flex;
+//     justify-content: flex-end;
+//     font-size: 0.75em;
+//     cursor: pointer;
+//   }
+// }
 
-  .folio-sinopsis {
-    font-size: 0.9rem;
+// // :checked
+// input:checked {
+//   + .tab-label {
+//     &::after {
+//       transform: rotate(90deg);
+//     }
+//   }
+//   ~ .tab-content {
+//     max-height: 100vh;
+//     padding: 1em;
+//     width: 90%;
+//     font-size: 0.9rem;
+
+//     img {
+//       max-width: 300px;
+//       float: left;
+//       padding: 0 25px 25px 0;
+//     }
+//   }
+// }
+
+// .repolinks {
+//   a {
+//     display: block;
+//     margin-top: 10px;
+//     text-decoration: none;
+//     &:hover {
+//       color: #1403fe;
+//     }
+//     &:visited {
+//       text-decoration: none;
+//     }
+//   }
+// }
+
+@media (max-width: 800px) {
+  .l-wrapper {
+    margin: 1rem auto;
+    width: 45%;
   }
+  // .folio-title {
+  //   font-size: 0.9rem;
+  // }
+
+  // .folio-sinopsis {
+  //   font-size: 0.9rem;
+  // }
 }
 
 @media (max-width: 500px) {
-  .folio-title {
-    font-size: 0.75rem;
-    padding-right: 1rem;
+  .l-wrapper {
+    margin: 1rem auto;
+    width: 100%;
   }
+  // .folio-title {
+  //   font-size: 0.75rem;
+  //   padding-right: 1rem;
+  // }
 
   //各ブログのタイトル
   .blogPageContent {

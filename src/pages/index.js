@@ -4,21 +4,25 @@ import './index.styles.scss';
 import portfolioItems from '../components/portfolio-items';
 
 function renderFolio() {
-  return portfolioItems.map(({ title, blogComment, idx, desc, repo, sinopsis, live, img }) => {
-    console.log(title);
-    return (
-      <div key={'div' + idx} className="tab">
-        <input key={'index' + idx} type="checkbox" id={idx + title} />
-        <label key={'label' + idx} className="tab-label" htmlFor={idx + title}>  <span key={'pTit' + idx} className='folio-title'>{title} </span>
-          <span key={'dot' + idx} className='folio-title'>· </span>
-          <span key={'sinopsis' + idx} className='folio-sinopsis'>{sinopsis}</span></label>
-        <div key={'tab' + idx} className="tab-content">
-          <img alt="nicasia" src={img} />
-          {desc}
-          <span className="repolinks" key={'repo' + idx}><a key={'repoLink' + idx} href={repo}>Github Repo</a></span>
-          {live ? <span className="repolinks" key={'live' + idx}><a key={'liveLink' + idx} href={repo}>Check it live</a></span> : null}
+
+  return portfolioItems.map(({ title, idx, desc, repo, sinopsis, live, img }) => {
+    return (<div key={'div' + idx} className={"l-wrapper"}>
+      <article className={"card"}>
+        <div className={"card_header"}>
+          <p className={"card_title"} >{title} </p>
+          <figure className={"card_thumbnail"}>
+            <img src={img} alt="thumbnail" className={"card_image"} />
+          </figure>
         </div>
-      </div>
+        <div className={"card_body"}>
+          <p className={"card_text2"}>{desc}</p>
+        </div>
+        <div className={"card_footer"}>
+          <p className={"card_text"}><a href={repo} className={"button-compact"} target="_blank" rel="noopener noreferrer">Github Repo</a></p>
+          {live ? <p className={"card_live"}><a href={live} className={"button-compact"} target="_blank" rel="noopener noreferrer">check it live</a></p> : null}
+        </div>
+      </article>
+    </div>
     )
   })
 }
@@ -28,7 +32,7 @@ const Index = () => {
     <Layout>
       <h1 className="opener">Portfolio</h1>
       <p className="subtitle">These are a few of my projects. Open up for repo and live version!</p>
-      {renderFolio()}
+      <div class="cssGrid">{renderFolio()}</div>
     </Layout>
   )
 }

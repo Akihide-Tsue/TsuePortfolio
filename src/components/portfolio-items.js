@@ -1,10 +1,10 @@
 const portfolioItems = [
     {
-        title: 'Portfolio Item 1',
-        sinopsis: 'This is a pure CSS accordion. Click to open',
-        desc: 'You can put your description here. Include your github Repo. A link for a live version is optional. Include a screen cap. Or edit the format',
-        img: './portfolio/faduense.png',
-        repo: 'https://github.com/martin2844/faduense',
+        title: 'ポートフォリオサイト',
+        sinopsis: 'Gatsby.jsとFireBaseを使用しています',
+        desc: 'desc書く',
+        img: './portfolio/item1photo.jpg',
+        repo: 'https://github.com/Akihide-Tsue/Tsue-website#readme',
         idx: 1
     },
     {

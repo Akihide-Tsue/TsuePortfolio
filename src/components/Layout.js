@@ -2,17 +2,16 @@ import React from 'react';
 import Footer from './Footer';
 import Header from './Header';
 
-
 const Layout = (props) => {
-    return (
-        <div className="body"  >
-            <Header />
-            <div className="content-main">
-                {props.children}
-            </div>
-            <Footer />
-        </div>
-    )
+  return (
+    <div className="body"  >
+      <Header />
+      <div className="content-main">
+        {props.children}
+      </div>
+      <Footer />
+    </div>
+  )
 }
 
 export default Layout
