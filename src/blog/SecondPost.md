@@ -1,7 +1,7 @@
 ---
 title: '作成中'
-date:  '2020/9/5'
-sinopsis: "a"
+date:  '2020/9/20'
+sinopsis: "test"
 ---
 This is the second post
 
@@ -9,5 +9,3 @@ This is the second post
 
 1. What you want
 2. Whatever ya want
-
- ### [戻る](/blog)

@@ -24,7 +24,7 @@ const Blog = () => {
     `)
 
   const posts = postsQuery.allMarkdownRemark.edges.map((posts) => {
-    return (<ul className="blogPageContent">
+    return (<ul className="blogPageContent" key={posts.node.frontmatter.date}>
       <Link className='nodecor' to={`/blog/${posts.node.fields.slug}`}  >
         <div className="eachBlogTitle">{posts.node.frontmatter.title}</div>
         <p>{posts.node.frontmatter.date}</p>

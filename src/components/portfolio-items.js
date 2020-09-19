@@ -1,9 +1,8 @@
 const portfolioItems = [
     {
         title: 'ポートフォリオサイト',
-        sinopsis: 'Gatsby.jsとFireBaseを使用しています',
-        desc: 'desc書く',
-        img: './portfolio/item1photo.jpg',
+        desc: 'このサイトです。\n aaaa',
+        img: './portfolio/portfolioIMG.png',
         repo: 'https://github.com/Akihide-Tsue/Tsue-website#readme',
         idx: 1
     },
@@ -19,7 +18,7 @@ const portfolioItems = [
     {
         title: 'Portfolio Item 3',
         sinopsis: 'It also includes a Blog section, with the createPages Api',
-        desc: 'Write posts directly in markdown. Thanks to plugins, and the createPage Api, gatbsy generates blog posts automatically',
+        desc: 'Write posts directly in markdown.Write posts directly in markdown.Write posts directly in markdown.Write posts directly in markdown.Write posts directly in markdown. Thanks to plugins, and the createPage Api, gatbsy generates blog posts automatically',
         img: './portfolio/ejs-blog.png',
         repo: 'https://github.com/martin2844/ejs-blog',
         live: 'https://my-ejs-blog.herokuapp.com/',

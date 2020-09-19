@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link, graphql, useStaticQuery } from 'gatsby'
+// import { Link, graphql, useStaticQuery } from 'gatsby'
+import { Link} from 'gatsby'
 import Typewriter from 'typewriter-effect';
-import Img from 'gatsby-image';
+// import Img from 'gatsby-image';
 import headerImage from '../images/headerIcon.png'
 import wantedly from '../images/logo/wantedly_icon.svg'
 
