@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from 'gatsby'
 import headerImage from '../images/headerIcon.png'
-import Footer from '../components/Footer';
 import Typewriter from 'typewriter-effect';
 import './404.styles.scss';
 
@@ -20,12 +19,17 @@ const Index = () => {
       <div className='before-typewriting-text'>
         <Typewriter
           options={{
-            strings: ['ページが見つかりません', '404 Page not Found'],
+            strings: ['お探しのページは見つかりませんでした', '404 Page not Found'],
             autoStart: true, loop: true,
-          }}
-        />
+          }} />
       </div>
-      <Footer />
+      <div className='before-typewriting-text'>
+        <Typewriter
+          options={{
+            strings: ['404 Page not Found', 'お探しのページは見つかりませんでした'],
+            autoStart: true, loop: true,
+          }} />
+      </div>
     </div>
   )
 }
