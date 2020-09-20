@@ -68,32 +68,32 @@
   margin-left: 2rem;
 }
 
-.socialContainer {
-  text-align: center;
-  // a {
-  //   color: black;
-  //   &:visited {
-  //     color: black;
-  //   }
-  // }
-  .social {
-    color: black;
-    // padding: 0 0.5rem;
-    &:visited {
-      color: black;
-    }
-    i {
-      -webkit-transition: -webkit-transform 0.2s ease-in-out;
-      transition: transform 0.2s ease-in-out;
-      padding: 16px 16px 0 16px;
-      &:hover {
-        -webkit-transform: rotate(30deg);
-        transform: rotate(30deg);
-        color: cornflowerblue;
-        transition: 0.2s;
-      }
-    }
-  }
+// .socialContainer {
+//   text-align: center;
+//   // a {
+//   //   color: black;
+//   //   &:visited {
+//   //     color: black;
+//   //   }
+//   // }
+//   .social {
+//     color: black;
+//     // padding: 0 0.5rem;
+//     &:visited {
+//       color: black;
+//     }
+//     i {
+//       -webkit-transition: -webkit-transform 0.2s ease-in-out;
+//       transition: transform 0.2s ease-in-out;
+//       padding: 16px 16px 0 16px;
+//       &:hover {
+//         -webkit-transform: rotate(30deg);
+//         transform: rotate(30deg);
+//         color: cornflowerblue;
+//         transition: 0.2s;
+//       }
+//     }
+//   }
   //   .tooltip {
   //   position: relative;
   // }
@@ -128,7 +128,7 @@
   //   top: 36px;
   //   opacity: 1;
   // }
-}
+// }
 
 @media (max-width: 1050px) {
   .firstProf {

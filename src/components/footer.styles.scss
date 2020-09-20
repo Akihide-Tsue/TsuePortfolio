@@ -1,14 +1,113 @@
+//フッター
 .footer {
-  text-align: center;
-  bottom: 0;
   width: 100%;
-  height: 25px;
-  color: #fff;
-  background-color: #2167e9;
-  line-height: 25px;
+  background-color: #dddd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  .wrapper {
+    margin-top: 15px;
+    text-decoration: none;
+    color: black;
+    &_label {
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+    .contents {
+      display: grid;
+      .link {
+        padding-left: 10px;
+        color: black;
+        text-decoration: none;
+        padding-top: 4px;
+        &:hover {
+          color: #1991da;
+          transition: 0.2s;
+          opacity: 0.8;
+        }
+        i {
+          padding: 0;
+          font-size: 5px;
+        }
+      }
+    }
+    .tooltip {
+      position: relative;
+      color: black;
+    }
+    .tooltip::before,
+    .tooltip::after {
+      position: absolute;
+      transition: all 0.3s ease 0s;
+      opacity: 0;
+    }
+    .tooltip::before {
+      content: "";
+      border: 10px solid transparent;
+      border-bottom-color: #000;
+      top: 10px;
+      left: 12px;
+    }
+    .tooltip::after {
+      content: attr(data-tooltip);
+      display: block;
+      padding: 10px;
+      background: #000;
+      color: #fff;
+      border-radius: 5px;
+      top: 30px;
+      left: 0;
+      font-size: small;
+      width: 160px;
+    }
+    .tooltip:hover::before {
+      top: 16px;
+      opacity: 1;
+    }
+    .tooltip:hover::after {
+      top: 36px;
+      opacity: 1;
+    }
+    i {
+      -webkit-transition: -webkit-transform 0.2s ease-in-out;
+      transition: transform 0.2s ease-in-out;
+      padding: 16px;
+      &:hover {
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+        color: #1991da;
+        transition: 0.2s;
+        opacity: 0.8;
+      }
+    }
+    .mobile {
+      font-size: x-small;
+    }
+  }
+  .bottom {
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    background-color: #dddd;
+    line-height: 25px;
+    margin-top: 10px;
+  }
 }
-@media (max-width: 650px) {
-  .footer {
+@media (max-width: 800px) {
+  .tooltip {
+    display: none;
+  }
+  .mobileTwitter {
+    color: black;
+  }
+}
+@media (min-width: 800px) {
+  .mobileTwitter {
+    display: none;
+    color: black;
+  }
+  .mobile {
     display: none;
   }
 }

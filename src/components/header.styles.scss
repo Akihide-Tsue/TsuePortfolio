@@ -14,7 +14,7 @@ h1 {
 
 // .attr {
 //   font-family: "Anonymous Pro", monospace;
-//   background-color: #2167e9;
+//   background-color: #1991DA;
 //   font-size: 1.2rem;
 //   margin: 0 0.5rem 0 0.5rem;
 // }
@@ -139,8 +139,8 @@ body {
     // transition: box-shadow 2s ease-out, transform 2s ease-out;
     // box-shadow: 0 15px 10px 5px rgba(0, 0, 0, 0);
     &:hover {
-      // opacity: 0.8;
-      background-color: #2167e9;
+      opacity: 0.8;
+      background-color: #1991da;
       transition: 0.1s;
       // box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 1);
       // transform: translateY(-10px);
@@ -227,6 +227,8 @@ body {
   text-decoration: none;
   color: black;
   &:hover {
-    color: #2167e9
+    color: #1991da;
+    transition: 0.2s;
+    opacity: 0.8;
   }
 }

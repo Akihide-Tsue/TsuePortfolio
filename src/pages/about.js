@@ -98,13 +98,13 @@ const About = (props) => {
 
 				</div>
 			</div>
-			<div className={aboutStyle.socialContainer}>
+			{/* <div className={aboutStyle.socialContainer}>
 				<h1 className="opener">Contact</h1>
 				<p>DMにてご連絡ください</p>
 				<a href='https://twitter.com/Tsue_engineer' target="_blank" rel="noopener noreferrer" className={aboutStyle.social}>
 					<i className="fab fa-twitter" />
 				</a>
-			</div>
+			</div> */}
 		</Layout >
 	)
 }
