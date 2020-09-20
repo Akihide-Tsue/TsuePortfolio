@@ -78,13 +78,14 @@ input {
       font-size: 1.3rem;
       order: 1;
       margin-bottom: 0.6rem;
-      background: linear-gradient(transparent 100%, #2167e9 100%);
+      background: linear-gradient(transparent 80%, #2167e9 90%);
     }
     &_thumbnail {
       margin: 0;
       order: 0;
       height: 20vh; //TODO仮の高さ
       overflow: hidden;
+      width: 100%;
     }
     &_image {
       width: 100%;

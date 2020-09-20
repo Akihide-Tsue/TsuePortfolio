@@ -1,7 +1,7 @@
 const portfolioItems = [
     {
         title: 'ポートフォリオサイト',
-        desc: 'このサイトです。\n aaaa',
+        desc: 'このサイトです。\n言語:React.js：2.5.1\nFW:gatsby：2.24.63',
         img: './portfolio/portfolioIMG.png',
         repo: 'https://github.com/Akihide-Tsue/Tsue.com#readme',
         idx: 1
@@ -16,10 +16,10 @@ const portfolioItems = [
     },
     {
         title: '傘リマインダー LINE BOT',
-        desc: '降水確率30％以上の日に通知を送るBot',
-        img: './portfolio/ejs-blog.png',
+        desc: '降水確率30％以上の日に通知を送るBot\n言語:Ruby：2.5.1\nFW:Rails：5.2.0\nAPI:LINE Messaging API\nDB:PostgreSQL：10.1\nサーバー:Heroku',
+        img: './portfolio/LINEbot.png',
         repo: 'https://github.com/Akihide-Tsue/rainnoteice#readme',
-        live: '',
+        live: 'https://lin.ee/c3AOgIE',
         idx: 3
     },
     {

@@ -1,17 +1,12 @@
 const path = require('path');
 
-/*
- * Configure your Gatsby site with this file.
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
   siteMetadata: {
-    title: 'Developer Name',
-    author: 'Martin Chammah',
-    siteUrl: `https://www.martinchammah.dev`
+    title: 'Tsue.com portfolio',
+    author: 'Akihide Tsue',
+    siteUrl: `https://tsue-gatsby.web.app/`
   },
-  /* Your site config here */
+
   plugins: [
     'gatsby-plugin-sass',
     {
