@@ -3,43 +3,39 @@ const portfolioItems = [
         title: 'ポートフォリオサイト',
         desc: 'このサイトです。\n aaaa',
         img: './portfolio/portfolioIMG.png',
-        repo: 'https://github.com/Akihide-Tsue/Tsue-website#readme',
+        repo: 'https://github.com/Akihide-Tsue/Tsue.com#readme',
         idx: 1
     },
     {
-        title: 'Portfolio Item 2',
-        sinopsis: 'This is just a quick description. Open up for more details',
-        desc: 'This is just a javascript array of objects. Gatsby makes the JSX elements to show up',
+        title: '自作コンポーネント集',
+        desc: '未作成',
         img: './portfolio/bitcoin.png',
-        live: 'bitcoinhoy.com.ar',
-        repo: 'https://github.com/martin2844',
+        repo: '#',
+        live: '#',
         idx: 2
     },
     {
-        title: 'Portfolio Item 3',
-        sinopsis: 'It also includes a Blog section, with the createPages Api',
-        desc: 'Write posts directly in markdown.Write posts directly in markdown.Write posts directly in markdown.Write posts directly in markdown.Write posts directly in markdown. Thanks to plugins, and the createPage Api, gatbsy generates blog posts automatically',
+        title: '傘リマインダー LINE BOT',
+        desc: '降水確率30％以上の日に通知を送るBot',
         img: './portfolio/ejs-blog.png',
-        repo: 'https://github.com/martin2844/ejs-blog',
-        live: 'https://my-ejs-blog.herokuapp.com/',
+        repo: 'https://github.com/Akihide-Tsue/rainnoteice#readme',
+        live: '',
         idx: 3
     },
     {
-        title: 'Portfolio Item 4',
-        sinopsis: 'Its very minimalist, but that was the end goal',
-        desc: 'This was inspired in Dinesh Pandiyan personal page',
+        title: 'コロナ状況MAP',
+        desc: '未作成',
         img: './portfolio/EJS.png',
-        repo: 'https://github.com/martin2844',
-        live: 'https://my-ejs-todo-list.herokuapp.com',
+        repo: '',
+        live: '#',
         idx: 4
     },
     {
         title: 'Portfolio Item 5',
-        sinopsis: 'Please message me at twitter @codigoMate',
-        desc: 'I really appriciate any messages',
+        desc: '未作成',
         img: './portfolio/Mate.png',
-        repo: 'https://github.com/martin2844',
-        live: 'https://codigomate.com',
+        repo: '',
+        live: '#',
         idx: 5
     }
 

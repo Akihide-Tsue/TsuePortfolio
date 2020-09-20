@@ -15,7 +15,7 @@ function renderFolio() {
           </figure>
         </div>
         <div className={"card_body"}>
-          <p className={"card_text2"}>{desc}</p>
+          <p className={"card_text"} style={{ whiteSpace: "pre-line" }}>{desc}</p> {/* 改行 */}
         </div>
         <div className={"card_footer"}>
           <p className={"card_gitBtn"}><a href={repo} className={"button-compact"} target="_blank" rel="noopener noreferrer">Github Repo</a></p>
