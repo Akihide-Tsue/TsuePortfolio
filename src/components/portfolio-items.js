@@ -8,10 +8,10 @@ const portfolioItems = [
     },
     {
         title: '自作コンポーネント集',
-        desc: '作成中\n\nReact：6.14.7',
-        img: './portfolio/bitcoin.png',
+        desc: 'Material-UI\nStyled-component\nReact：6.14.7',
+        img: './portfolio/Mate.png',
         repo: '#',
-        live: './OriginalComponents/kari',
+        live: './OriginalComponent/dashboard',
         idx: 2
     },
     {

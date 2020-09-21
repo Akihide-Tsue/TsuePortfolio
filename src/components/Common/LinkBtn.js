@@ -5,7 +5,7 @@ import './LinkBtn.scss'
 const LinkBtn = (props) => {
   const { innerText } = props;
   return (
-    <Button variant="contained" >{innerText}</ Button>
+    <Button variant="contained" className="LinkBtn" >{innerText}</ Button>
   )
 }
 

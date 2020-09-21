@@ -14,7 +14,7 @@ https://tsue-gatsby.web.app
 
 ## Web Performance Tests🕐
 Lighthouse Report - [WebPageTest](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Ftsue-gatsby.web.app%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
-
+[![Image from Gyazo](https://i.gyazo.com/5f1267abf8300a93b40a4a039a25da46.png)](https://gyazo.com/5f1267abf8300a93b40a4a039a25da46)
 ## Quick Start🚀
 ### Create a Gatsby site
 Use the Gatsby CLI to create a new site,
