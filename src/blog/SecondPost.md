@@ -1,5 +1,5 @@
 ---
-title: '作成中'
+title: 'test'
 date:  '2020/9/20'
 sinopsis: "test"
 ---

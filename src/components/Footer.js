@@ -3,6 +3,9 @@ import { Link } from 'gatsby'
 import './footer.styles.scss';
 
 const Footer = () => {
+  //スマホ等タッチ可能であれば表示
+  const isTouchDevice = ('ontouchstart' in window);
+
   return (
     <div className="footer" >
       <div className="wrapper">
@@ -16,11 +19,18 @@ const Footer = () => {
 
       <div className="wrapper" >
         <div className="wrapper_label">Contact</div>
-        <a href='https://twitter.com/Tsue_engineer' target="_blank" rel="noopener noreferrer"
-          className="tooltip" data-tooltip="DMにてご連絡ください"><i className="fab fa-twitter" /></a>
-        <a href='https://twitter.com/Tsue_engineer' target="_blank" rel="noopener noreferrer" className="mobileTwitter" >
-          <i className="fab fa-twitter" /></a>
-        <div className="mobile">DMにてご連絡ください</div>
+        {!isTouchDevice && <a href='https://twitter.com/Tsue_engineer' target="_blank" rel="noopener noreferrer"
+          className="tooltip" data-tooltip="DMにてご連絡ください"><i className="fab fa-twitter" /></a>}
+        {isTouchDevice && <a href='https://twitter.com/Tsue_engineer' target="_blank" rel="noopener noreferrer" className="mobileContact" >
+          <div className="mobileIcon"><i className="fab fa-twitter" /></div></a>}
+        {isTouchDevice && <a href='https://twitter.com/Tsue_engineer' target="_blank" rel="noopener noreferrer" className="mobileContact" >
+          <div className="mobileText"><i className="fas fa-chevron-right" /> DMにてご連絡ください</div></a>}
+
+        {/* スマホ表示テスト用 */}
+        {/* <a href='https://twitter.com/Tsue_engineer' target="_blank" rel="noopener noreferrer" className="mobileContact" >
+          <div className="mobileIcon"><i className="fab fa-twitter" /></div></a>
+        <a href='https://twitter.com/Tsue_engineer' target="_blank" rel="noopener noreferrer" className="mobileContact" >
+          <div className="mobileText"><i className="fas fa-chevron-right" /> DMにてご連絡ください</div></a> */}
       </div>
       <div className='bottom'>© 2020 Tsue.com</div>
     </div >

@@ -13,6 +13,7 @@
       font-weight: bold;
       font-size: 1.4rem;
     }
+    //左の3つ
     .contents {
       display: grid;
       .link {
@@ -27,10 +28,26 @@
         }
         i {
           padding: 0;
-          font-size: 5px;
+          font-size: 12px;
         }
       }
     }
+    .mobileContact {
+      text-decoration: none;
+      .mobileIcon {
+        i {
+          color: #1991da;
+        }
+      }
+      .mobileText {
+        color: black;
+        i {
+          padding: 0;
+          font-size: 12px;
+        }
+      }
+    }
+    //吹き出し
     .tooltip {
       position: relative;
       color: black;
@@ -40,6 +57,7 @@
       position: absolute;
       transition: all 0.3s ease 0s;
       opacity: 0;
+      margin-left: 16px;
     }
     .tooltip::before {
       content: "";
@@ -71,7 +89,8 @@
     i {
       -webkit-transition: -webkit-transform 0.2s ease-in-out;
       transition: transform 0.2s ease-in-out;
-      padding: 16px;
+      padding: 15px 25px 15px 25px;
+      color: black;
       &:hover {
         -webkit-transform: rotate(30deg);
         transform: rotate(30deg);
@@ -80,10 +99,8 @@
         opacity: 0.8;
       }
     }
-    .mobile {
-      font-size: x-small;
-    }
   }
+  //©
   .bottom {
     text-align: center;
     bottom: 0;
@@ -95,19 +112,26 @@
   }
 }
 @media (max-width: 800px) {
-  .tooltip {
-    display: none;
-  }
-  .mobileTwitter {
-    color: black;
-  }
+  // .footer {
+  //   .tooltip {
+  //     display: none;
+  //   }
+  //   .mobileTwitter {
+  //     color: black;
+  //     text-decoration: none;
+  //   }
+  // }
 }
+//800以上の場合
 @media (min-width: 800px) {
-  .mobileTwitter {
-    display: none;
-    color: black;
-  }
-  .mobile {
-    display: none;
-  }
+  // .footer {
+  //   .mobileTwitter {
+  //     display: none;
+  //     color: black;
+  //     text-decoration: none;
+  //   }
+  //   .mobile {
+  //     display: none;
+  //   }
+  // }
 }
