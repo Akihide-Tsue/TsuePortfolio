@@ -48,44 +48,44 @@
       }
     }
     //吹き出し
-    .tooltip {
-      position: relative;
-      color: black;
-    }
-    .tooltip::before,
-    .tooltip::after {
-      position: absolute;
-      transition: all 0.3s ease 0s;
-      opacity: 0;
-      margin-left: 16px;
-    }
-    .tooltip::before {
-      content: "";
-      border: 10px solid transparent;
-      border-bottom-color: #000;
-      top: 10px;
-      left: 12px;
-    }
-    .tooltip::after {
-      content: attr(data-tooltip);
-      display: block;
-      padding: 10px;
-      background: #000;
-      color: #fff;
-      border-radius: 5px;
-      top: 30px;
-      left: 0;
-      font-size: small;
-      width: 160px;
-    }
-    .tooltip:hover::before {
-      top: 16px;
-      opacity: 1;
-    }
-    .tooltip:hover::after {
-      top: 36px;
-      opacity: 1;
-    }
+    // .tooltip {
+    //   position: relative;
+    //   color: black;
+    // }
+    // .tooltip::before,
+    // .tooltip::after {
+    //   position: absolute;
+    //   transition: all 0.3s ease 0s;
+    //   opacity: 0;
+    //   margin-left: 16px;
+    // }
+    // .tooltip::before {
+    //   content: "";
+    //   border: 10px solid transparent;
+    //   border-bottom-color: #000;
+    //   top: 10px;
+    //   left: 12px;
+    // }
+    // .tooltip::after {
+    //   content: attr(data-tooltip);
+    //   display: block;
+    //   padding: 10px;
+    //   background: #000;
+    //   color: #fff;
+    //   border-radius: 5px;
+    //   top: 30px;
+    //   left: 0;
+    //   font-size: small;
+    //   width: 160px;
+    // }
+    // .tooltip:hover::before {
+    //   top: 16px;
+    //   opacity: 1;
+    // }
+    // .tooltip:hover::after {
+    //   top: 36px;
+    //   opacity: 1;
+    // }
     i {
       -webkit-transition: -webkit-transform 0.2s ease-in-out;
       transition: transform 0.2s ease-in-out;
@@ -111,27 +111,29 @@
     margin-top: 10px;
   }
 }
-@media (max-width: 800px) {
-  // .footer {
-  //   .tooltip {
-  //     display: none;
-  //   }
-  //   .mobileTwitter {
-  //     color: black;
-  //     text-decoration: none;
-  //   }
-  // }
-}
-//800以上の場合
-@media (min-width: 800px) {
-  // .footer {
-  //   .mobileTwitter {
-  //     display: none;
-  //     color: black;
-  //     text-decoration: none;
-  //   }
-  //   .mobile {
-  //     display: none;
-  //   }
-  // }
-}
+// //550以下の場合
+// @media (max-width: 550px) {
+//   .tooltip::before,
+//   .tooltip::after {
+//     display: none;
+//   }
+//   .tooltip:hover::before {
+//     display: none;
+//   }
+//   .tooltip:hover::after {
+//     display: none;
+//   }
+// }
+// //50以上の場合
+// @media (min-width: 550px) {
+//   // .footer {
+//   //   .mobileTwitter {
+//   //     display: none;
+//   //     color: black;
+//   //     text-decoration: none;
+//   //   }
+//   //   .mobile {
+//   //     display: none;
+//   //   }
+//   // }
+// }

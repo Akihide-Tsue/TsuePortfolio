@@ -1,0 +1,32 @@
+//ボタン内デフォルトが大文字
+.MuiButtonBase-root {
+  background-color: #0703fe !important;
+  padding: 6px 10px !important;
+  //ふわふわエフェクト
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  animation: bounce 2s ease-in-out forwards;
+  animation-iteration-count: infinite;
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+      -webkit-transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+      -webkit-transform: scale(1.05);
+    }
+  }
+  &:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+  .MuiButton-label {
+    color: white;
+    text-transform: none;
+    font-weight: 900;
+  }
+}

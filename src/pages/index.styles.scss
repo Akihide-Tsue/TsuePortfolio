@@ -135,7 +135,7 @@ input {
       text-decoration: none;
       &:hover,
       &:focus {
-        background-color: #1991DA;
+        background-color: #1991da;
         transition: 0.1s;
       }
     }
@@ -233,6 +233,23 @@ input {
 }
 
 @media (max-width: 500px) {
+  .content-main {
+    padding: 0;
+  }
+  .cssGrid > .l-wrapper {
+    .card_text {
+      font-size: 1rem;
+      margin-top: 0;
+      margin-bottom: 2rem;
+      height: 22vh; //TODO 仮の高さ
+    }
+  }
+  // .card_title {
+  //   padding: 0 !important;
+  // }
+  // .cssGrid > .l-wrapper {
+  //   padding: 0;
+  // }
   // .folio-title {
   //   font-size: 0.75rem;
   //   padding-right: 1rem;

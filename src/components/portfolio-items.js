@@ -11,7 +11,7 @@ const portfolioItems = [
         desc: '作成中\n\nReact：6.14.7',
         img: './portfolio/bitcoin.png',
         repo: '#',
-        live: '#',
+        live: './OriginalComponents/kari',
         idx: 2
     },
     {
@@ -35,7 +35,7 @@ const portfolioItems = [
         desc: '未作成',
         img: './portfolio/Mate.png',
         repo: '',
-        live: '#',
+        live: 'null',
         idx: 5
     }
 
