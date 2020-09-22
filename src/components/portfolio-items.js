@@ -27,7 +27,7 @@ const portfolioItems = [
         desc: '作成中',
         img: './portfolio/Material.png',
         repo: '',
-        live: '#',
+        live: './dashboard',
         idx: 4
     },
     {

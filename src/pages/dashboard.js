@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import NavHeader from './COVID19/NavHeader';
-import NavContent from './COVID19/NavContent';
+import NavHeader from '../components/Common/NavHeader';
+import NavContent from '../components/Common/NavContent';
 import { StylesProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -14,7 +14,7 @@ import {
 } from '@mui-treasury/mockup/layout';
 import {
   Root,
-  getHeader,
+  // getHeader,
   getContent,
   getDrawerSidebar,
   getSidebarContent,
@@ -24,7 +24,7 @@ import {
   getMuiTreasuryScheme,
 } from '@mui-treasury/layout';
 
-const Header = getHeader(styled);
+// const Header = getHeader(styled);
 const Content = getContent(styled);
 const DrawerSidebar = getDrawerSidebar(styled);
 const SidebarContent = getSidebarContent(styled);
@@ -61,7 +61,9 @@ const MuiTreasuryLayout = () => {
 
             <Content>
               <Toolbar>
-                <SidebarTrigger sidebarId="primarySidebar" />
+                <SidebarTrigger sidebarId="primarySidebar" className="sideBarOpenBtn"/>
+                {/* MuiButtonBase-root MuiIconButton-root SidebarTrigger-root-7 SidebarTrigger-root-8 sc-eCApGN jrQbmZ
+                に　background-color: #bbbb; */}
               </Toolbar>
               {/* <ContentMockUp /> */}
             </Content>

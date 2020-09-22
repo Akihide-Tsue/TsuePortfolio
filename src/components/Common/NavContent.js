@@ -26,7 +26,7 @@ export default function NavContent() {
 
   return (
     <div className={classes.root}>
-      <Divider />
+      <Divider className="firstLine"/>
 
       <ListItem
         button

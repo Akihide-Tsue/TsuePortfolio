@@ -1,21 +1,12 @@
 import React from "react";
-import { Link } from 'gatsby'
-import headerImage from '../../static/portfolio/headerIcon.png'
 import Typewriter from 'typewriter-effect';
-import './404.styles.scss';
+import Header from '../components/Header';
+import '../components/header.styles.scss';
 
-const Index = () => {
+const page404 = () => {
   return (
-    <div className="page404">
-      <Link className="logo404" to="/"><img alt="Tsue.com" className="headerIcon" src={headerImage} /></Link>
-      <div className="linkBtn">
-        <span className="pages-link">
-          <Link to="/">Portfolio</Link>
-          <Link to="/blog">Blog</Link>
-          <Link to="/about">About</Link>
-        </span>
-      </div>
-
+    <>
+      <Header />
       <div className='before-typewriting-text'>
         <Typewriter
           options={{
@@ -30,8 +21,8 @@ const Index = () => {
             autoStart: true, loop: true,
           }} />
       </div>
-    </div>
+    </>
   )
 }
 
-export default Index
+export default page404
