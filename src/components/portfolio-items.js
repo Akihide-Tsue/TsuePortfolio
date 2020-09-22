@@ -1,14 +1,14 @@
 const portfolioItems = [
     {
         title: 'ポートフォリオサイト',
-        desc: '静的サイトジェネレーターを採用し高速に表示しています\n\nReact：6.14.7\nFW:Gatsby：2.24.63\nサーバー：Firebase',
+        desc: '静的サイトジェネレーターを採用し高速に表示しています\n\nReact：6.14.7\nFW:Gatsby：2.24.63\nサーバー：Firebase\nレスポンシブデザイン',
         img: './portfolio/portfolioIMG.png',
         repo: 'https://github.com/Akihide-Tsue/Tsue.com#readme',
         idx: 1
     },
     {
         title: '自作コンポーネント集',
-        desc: 'Material-UI\nStyled-component\nReact：6.14.7',
+        desc: 'Material-UI\nStyled-component\nReact：6.14.7\n\n作成中です',
         img: './portfolio/Material.png',
         repo: 'https://github.com/Akihide-Tsue/TsuePortfolio/tree/master/src/pages/OriginalComponent',
         live: './OriginalComponent/dashboard',

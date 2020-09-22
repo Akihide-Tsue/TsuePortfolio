@@ -10,37 +10,24 @@
     padding: 0.8rem;
   }
 }
-
-.first-prof {
-  display: flex;
-  flex-direction: column;
-  font-size: 0.8rem;
-  flex: 1;
-  padding: 1rem;
-
-  .img {
-    border-radius: 50%;
-    margin-bottom: 200px;
-  }
-  .imagen {
-    justify-content: center;
+.main {
+  .first-prof {
+    display: flex;
     flex-direction: column;
-    align-self: center;
-    width: 100%;
+    font-size: 0.8rem;
+    flex: 1;
+    padding: 1rem;
+    .imagen {
+      justify-content: center;
+      flex-direction: column;
+      align-self: center;
+      .myPhoto {
+        border-radius: 50%;
+        margin-bottom: 200px;
+        max-width: 400px;
+      }
+    }
   }
-
-  // .icon {
-  //   flex-direction: column;
-  //   float: left;
-  //   font-weight: 1500;
-  //   .i {
-  //     padding: 0;
-  //   }
-  //   p {
-  //     margin: 0;
-  //     display: inline-block;
-  //   }
-  // }
 }
 //about マークについた一言
 .textBox {
@@ -94,40 +81,40 @@
 //       }
 //     }
 //   }
-  //   .tooltip {
-  //   position: relative;
-  // }
-  // .tooltip::before,
-  // .tooltip::after {
-  //   position: absolute;
-  //   transition: all 0.3s ease 0s;
-  //   opacity: 0;
-  // }
-  // .tooltip::before {
-  //   content: "";
-  //   border: 10px solid transparent;
-  //   border-bottom-color: #000;
-  //   top: 10px;
-  //   left: 12px;
-  // }
-  // .tooltip::after {
-  //   content: attr(data-tooltip);
-  //   display: block;
-  //   padding: 20px;
-  //   background: #000;
-  //   color: #fff;
-  //   border-radius: 5px;
-  //   top: 30px;
-  //   left: 0;
-  // }
-  // .tooltip:hover::before {
-  //   top: 16px;
-  //   opacity: 1;
-  // }
-  // .tooltip:hover::after {
-  //   top: 36px;
-  //   opacity: 1;
-  // }
+//   .tooltip {
+//   position: relative;
+// }
+// .tooltip::before,
+// .tooltip::after {
+//   position: absolute;
+//   transition: all 0.3s ease 0s;
+//   opacity: 0;
+// }
+// .tooltip::before {
+//   content: "";
+//   border: 10px solid transparent;
+//   border-bottom-color: #000;
+//   top: 10px;
+//   left: 12px;
+// }
+// .tooltip::after {
+//   content: attr(data-tooltip);
+//   display: block;
+//   padding: 20px;
+//   background: #000;
+//   color: #fff;
+//   border-radius: 5px;
+//   top: 30px;
+//   left: 0;
+// }
+// .tooltip:hover::before {
+//   top: 16px;
+//   opacity: 1;
+// }
+// .tooltip:hover::after {
+//   top: 36px;
+//   opacity: 1;
+// }
 // }
 
 @media (max-width: 1050px) {
@@ -170,7 +157,7 @@
   }
 }
 @media (max-width: 700px) {
-    .imagen {
+  .imagen {
     width: 50%;
     display: block;
     margin: 0 auto;
@@ -178,7 +165,7 @@
 }
 
 @media (max-width: 550px) {
-    .imagen {
+  .imagen {
     width: 90%;
     display: block;
     margin: 0 auto;

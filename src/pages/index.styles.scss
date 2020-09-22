@@ -58,7 +58,7 @@ input {
 }
 .cssGrid > .l-wrapper {
   margin: 1rem auto;
-  background: #ddd;
+  background: #ccc;
   overflow: auto;
   min-width: 0;
   padding: 1em;
@@ -81,7 +81,7 @@ input {
       font-size: 1.3rem;
       order: 1;
       margin-bottom: 0.6rem;
-      background: linear-gradient(transparent 80%, #2167e9 90%);
+      background: linear-gradient(transparent 80%, #1991da 90%);
     }
     &_thumbnail {
       margin: 0;
@@ -138,7 +138,7 @@ input {
       text-decoration: none;
       &:hover,
       &:focus {
-        background-color: #1991da;
+        background-color: rgb(25, 145, 218);
         transition: 0.1s;
       }
     }

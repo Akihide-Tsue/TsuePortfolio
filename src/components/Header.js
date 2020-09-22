@@ -1,25 +1,15 @@
 import React from 'react';
-// import { Link, graphql, useStaticQuery } from 'gatsby'
+
+import { Divider } from '@material-ui/core';
 import { LinkBtn } from './Common/LinkBtn.js'
 import { Link } from 'gatsby'
 import Typewriter from 'typewriter-effect';
-// import Img from 'gatsby-image';
-import headerImage from '../images/headerIcon.png'
-import wantedly from '../images/logo/wantedly_icon.svg'
+import headerImage from '../../static/portfolio/headerIcon.png'
+import wantedly from '../../static/portfolio/wantedly_icon.svg'
 
 import './header.styles.scss';
 
 const Header = () => {
-  // const data = useStaticQuery(graphql`
-  //    query {
-  //        site{
-  //            siteMetadata {
-  //                title
-  //            }
-  //        }
-  //    }
-  // `)
-
   return (
     <div className="header" >
       <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Open+Sans&display=swap" rel="stylesheet" />
@@ -58,7 +48,8 @@ const Header = () => {
               }} />
           </div>
         </div>
-        <hr />
+
+        <Divider className="divider" />
       </div>
     </div >
   );

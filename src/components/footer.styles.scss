@@ -24,7 +24,6 @@
         &:hover {
           color: #1991da;
           transition: 0.2s;
-          opacity: 0.8;
         }
         i {
           padding: 0;
@@ -34,17 +33,21 @@
     }
     .mobileContact {
       text-decoration: none;
-      .mobileIcon {
-        i {
-          color: #1991da;
-        }
+    }
+    .mobileIcon {
+      i {
+        color: #1991da;
       }
-      .mobileText {
-        color: black;
-        i {
-          padding: 0;
-          font-size: 12px;
-        }
+    }
+    .mobileText {
+      color: black;
+      &:hover {
+        color: #1991da;
+        transition: 0.2s;
+      }
+      i {
+        padding: 0;
+        font-size: 12px;
       }
     }
     //吹き出し
@@ -86,6 +89,7 @@
     //   top: 36px;
     //   opacity: 1;
     // }
+    //コンタクトの鳥かたむく
     i {
       -webkit-transition: -webkit-transform 0.2s ease-in-out;
       transition: transform 0.2s ease-in-out;

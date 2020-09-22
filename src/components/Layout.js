@@ -4,13 +4,13 @@ import Header from './Header';
 
 const Layout = (props) => {
   return (
-    <div className="body"  >
+    <div className="body" >
       <Header />
       <div className="content-main">
         {props.children}
       </div>
       <Footer />
-    </div>
+    </div >
   )
 }
 

@@ -19,7 +19,7 @@ const Footer = () => {
         <a href='https://twitter.com/Tsue_engineer' target="_blank" rel="noopener noreferrer" className="mobileContact" >
           <div className="mobileIcon"><i className="fab fa-twitter" /></div></a>
         <a href='https://twitter.com/Tsue_engineer' target="_blank" rel="noopener noreferrer" className="mobileContact" >
-          <div className="mobileText"><i className="fas fa-chevron-right" /> DMにてご連絡ください</div></a>
+          <div className="mobileText"><i className="fas fa-chevron-right" /> DMにてご連絡下さい</div></a>
       </div>
       <div className='bottom'>© 2020 Tsue.com</div>
     </div >

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'gatsby'
-import headerImage from '../images/headerIcon.png'
+import headerImage from '../../static/portfolio/headerIcon.png'
 import Typewriter from 'typewriter-effect';
 import './404.styles.scss';
 
