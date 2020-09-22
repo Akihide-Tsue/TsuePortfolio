@@ -48,6 +48,9 @@ const About = (props) => {
 						◆ 29歳 | 大阪市在住 | 東京出身<br />
 						◆ 得意な分野：SPAのフロントエンド開発<br />
 					</p>
+
+					<div className={aboutStyle.blankSpace} />
+
 					<p>
 						<b>実業務で使用したスキル</b><br />
 						◆ フロントエンド:	React.js | Material-UI |<br />
@@ -55,6 +58,9 @@ const About = (props) => {
 						◆ AWS:	VPC | S3 | Cloud Front | Route53 | IAM | Cloud Watch | Code Pipeline | Code Build |<br />
 						◆ その他:	GitHub | Git Bucket | Webpack | npm |<br />
 					</p>
+
+					<div className={aboutStyle.blankSpace} />
+
 					<p>
 						<b>上記以外に、学習で使用したスキル</b><br />
 						◆ フロントエンド:	Gatsby | Nuxt.js |<br />
@@ -62,12 +68,18 @@ const About = (props) => {
 						◆ インフラ:	FireBase | Heroku | Docker | Nginx |<br />
 						◆ その他:	yarn | PostgreSQL |<br />
 					</p>
+
+					<div className={aboutStyle.blankSpace} />
+
 					<p>
 						<b>主な業務経歴</b><br />
 						◆ (改修案件) 小学校向け電子教科書webアプリケーション<br />
 						◆ (新規開発) BtoB企業向けの社内業務システムSPA<br />
 						⚪︎担当業務：フロント実装 | バックエンドAPI実装 | インフラ構築(AWS) | テスト設計 | テスト |<br />
 					</p>
+
+					<div className={aboutStyle.blankSpace} />
+
 					<p>
 						<b>職務経歴</b><br />
 						◆ (キャリアチェンジ) 2020年2月~<br />
@@ -80,6 +92,9 @@ const About = (props) => {
 						◆ (インターン)2013年2~3月<br />
 						⚪︎ United Television Broadcasting Systems, Inc.(ロサンゼルスのテレビ局)にて制作アシスタントとして従事。<br />
 					</p>
+
+					<div className={aboutStyle.blankSpace} />
+
 					<p>
 						<b>趣味</b><br />
 						インドアゴルフ | お手軽料理 | Netflix(海外ドラマ) | FX(テクニカル分析) | 駅前留学(TOEIC:860)<br />
