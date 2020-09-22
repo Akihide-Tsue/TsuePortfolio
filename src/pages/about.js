@@ -30,16 +30,14 @@ const About = (props) => {
 
 					<div className={aboutStyle.textBox}>
 						<div className={aboutStyle.icon}>
-							{/* <i className="fas fa-map-marker-alt fa-sm" /> */}
 							<div className="iconLabel">■ Osaka, Japan</div>
 						</div>
 						<div className={aboutStyle.icon}>
-							{/* <i className="fas fa-graduation-cap fa-sm" /> */}
 							<div className="iconLabel">■ Tokyo University Of Agriculture</div>
 						</div>
-						{/* <div className={aboutStyle.iconos}><i className="fas fa-code fa-sm"></i><p>HTML, JS, CSS, noSQL</p></div> */}
-						{/* <div className={aboutStyle.iconos}><i className="fas fa-language fa-sm"></i><p>English, Spanish, Portuguese and Latin</p></div> */}
 					</div>
+
+					<div className={aboutStyle.blankSpace} />
 
 				</div>
 				<div className={aboutStyle.article}>

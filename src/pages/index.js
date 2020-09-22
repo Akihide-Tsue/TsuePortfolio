@@ -31,7 +31,6 @@ const Index = () => {
   return (
     <Layout>
       <h1 className="opener">Portfolio</h1>
-      <p className="subtitle">These are a few of my projects. Open up for repo and live version!</p>
       <div className="cssGrid">{renderFolio()}</div>
     </Layout>
   )

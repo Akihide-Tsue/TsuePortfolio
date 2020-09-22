@@ -8,10 +8,10 @@ const portfolioItems = [
     },
     {
         title: '自作コンポーネント集',
-        desc: 'Material-UI\nStyled-component\nReact：6.14.7\n\n作成中です',
+        desc: 'React：6.14.7\nMaterial-UI\nStyled-component\n\n作成中です',
         img: './portfolio/Material.png',
         repo: 'https://github.com/Akihide-Tsue/TsuePortfolio/tree/master/src/pages/OriginalComponent',
-        live: './OriginalComponent/dashboard',
+        live: './dashboard',
         idx: 2
     },
     {
