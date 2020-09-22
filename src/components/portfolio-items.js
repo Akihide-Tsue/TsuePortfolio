@@ -1,7 +1,7 @@
 const portfolioItems = [
     {
         title: 'ポートフォリオサイト',
-        desc: '静的サイトジェネレーターを採用し高速に表示します\n\nReact：6.14.7\nFW:Gatsby：2.24.63\nサーバー：Firebase',
+        desc: '静的サイトジェネレーターを採用し高速に表示しています\n\nReact：6.14.7\nFW:Gatsby：2.24.63\nサーバー：Firebase',
         img: './portfolio/portfolioIMG.png',
         repo: 'https://github.com/Akihide-Tsue/Tsue.com#readme',
         idx: 1
@@ -9,8 +9,8 @@ const portfolioItems = [
     {
         title: '自作コンポーネント集',
         desc: 'Material-UI\nStyled-component\nReact：6.14.7',
-        img: './portfolio/Mate.png',
-        repo: '#',
+        img: './portfolio/Material.png',
+        repo: 'https://github.com/Akihide-Tsue/TsuePortfolio/tree/master/src/pages/OriginalComponent',
         live: './OriginalComponent/dashboard',
         idx: 2
     },
@@ -25,7 +25,7 @@ const portfolioItems = [
     {
         title: 'コロナ状況MAP',
         desc: '作成中',
-        img: './portfolio/EJS.png',
+        img: './portfolio/Material.png',
         repo: '',
         live: '#',
         idx: 4
@@ -33,9 +33,9 @@ const portfolioItems = [
     {
         title: 'Portfolio Item 5',
         desc: '未作成',
-        img: './portfolio/Mate.png',
+        img: './portfolio/Material.png',
         repo: '',
-        live: 'null',
+        live: '#',
         idx: 5
     }
 

@@ -85,26 +85,8 @@ const About = (props) => {
 						インドアゴルフ | お手軽料理 | Netflix(海外ドラマ) | FX(テクニカル分析) | 駅前留学(TOEIC:860)<br />
 					</p>
 
-					{/* <div className={aboutStyle.logoContainer}>
-						<p>Some of the tech I like:</p>
-						<img alt="javascript" className={aboutStyle.logo} src="./logos/javascript.svg" />
-						<img alt="Gatsby" className={aboutStyle.logo} src="./logos/gatsby.svg" />
-						<img alt="GraphQl" className={aboutStyle.logo} src="./logos/graphql.svg" />
-						<img alt="React" className={aboutStyle.logo} src="./logos/react.svg" />
-						<img alt="nodeJs" className={aboutStyle.logo} src="./logos/nodejs-icon.svg" />
-						<img alt="Mongo" className={aboutStyle.logo} src="./logos/mongodb.png" />
-						<img alt="Sass" className={aboutStyle.logo} src="./logos/sass-1.svg" />
-					</div> */}
-
 				</div>
 			</div>
-			{/* <div className={aboutStyle.socialContainer}>
-				<h1 className="opener">Contact</h1>
-				<p>DMにてご連絡ください</p>
-				<a href='https://twitter.com/Tsue_engineer' target="_blank" rel="noopener noreferrer" className={aboutStyle.social}>
-					<i className="fab fa-twitter" />
-				</a>
-			</div> */}
 		</Layout >
 	)
 }
