@@ -1,14 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import NavContent from './OriginalComponent/NavContent';
+import NavHeader from './COVID19/NavHeader';
+import NavContent from './COVID19/NavContent';
 import { StylesProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
 import {
   // HeaderMockUp,
-  NavHeaderMockUp,
-  NavContentMockUp,
-  ContentMockUp,
+  // NavHeaderMockUp,
+  // NavContentMockUp,
+  // ContentMockUp,
   // FooterMockUp,
 } from '@mui-treasury/mockup/layout';
 import {
@@ -19,7 +20,7 @@ import {
   getSidebarContent,
   // getFooter,
   getSidebarTrigger,
-  getCollapseBtn,
+  // getCollapseBtn,
   getMuiTreasuryScheme,
 } from '@mui-treasury/layout';
 
@@ -29,7 +30,7 @@ const DrawerSidebar = getDrawerSidebar(styled);
 const SidebarContent = getSidebarContent(styled);
 // const Footer = getFooter(styled);
 const SidebarTrigger = getSidebarTrigger(styled);
-const CollapseBtn = getCollapseBtn(styled);
+// const CollapseBtn = getCollapseBtn(styled);
 
 const muiTreasuryScheme = getMuiTreasuryScheme();
 
@@ -40,25 +41,29 @@ const MuiTreasuryLayout = () => {
       <Root scheme={muiTreasuryScheme}>
         {({ state: { sidebar } }) => (
           <>
-            <Header>
+            {/* <Header>
               <Toolbar>
                 <SidebarTrigger sidebarId="primarySidebar" />
                 ヘッダー
-                {/* <HeaderMockUp /> */}
+                <HeaderMockUp />
               </Toolbar>
-            </Header>
+            </Header> */}
 
             <DrawerSidebar sidebarId="primarySidebar">
               <SidebarContent>
-                <NavHeaderMockUp collapsed={sidebar.primarySidebar.collapsed} />
+                {/* <NavHeaderMockUp collapsed={sidebar.primarySidebar.collapsed} /> */}
+                <NavHeader collapsed={sidebar.primarySidebar.collapsed} />
                 <NavContent />
-                <NavContentMockUp />
+                {/* <NavContentMockUp /> */}
               </SidebarContent>
-              <CollapseBtn />
+              {/* <CollapseBtn /> */}
             </DrawerSidebar>
 
             <Content>
-              <ContentMockUp />
+              <Toolbar>
+                <SidebarTrigger sidebarId="primarySidebar" />
+              </Toolbar>
+              {/* <ContentMockUp /> */}
             </Content>
             {/* <Footer>
               <FooterMockUp />

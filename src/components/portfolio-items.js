@@ -23,7 +23,7 @@ const portfolioItems = [
         idx: 3
     },
     {
-        title: 'コロナ状況MAP',
+        title: 'コロナ感染者数グラフ',
         desc: '作成中',
         img: './portfolio/Material.png',
         repo: '',
