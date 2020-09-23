@@ -5,6 +5,8 @@ import NavContent from '../components/Common/NavContent';
 import { StylesProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
+import App from './COVID19/App';
+
 import {
   // HeaderMockUp,
   // NavHeaderMockUp,
@@ -61,12 +63,13 @@ const MuiTreasuryLayout = () => {
 
             <Content>
               <Toolbar>
-                <SidebarTrigger sidebarId="primarySidebar" className="sideBarOpenBtn"/>
+                <SidebarTrigger sidebarId="primarySidebar" className="sideBarOpenBtn" />
                 {/* MuiButtonBase-root MuiIconButton-root SidebarTrigger-root-7 SidebarTrigger-root-8 sc-eCApGN jrQbmZ
                 に　background-color: #bbbb; */}
               </Toolbar>
               {/* <ContentMockUp /> */}
             </Content>
+            <App />
             {/* <Footer>
               <FooterMockUp />
             </Footer> */}
