@@ -5,14 +5,13 @@ import NavContent from '../components/Common/NavContent';
 import { StylesProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
-// import App from './COVID19/App';
 
 // import {
-// HeaderMockUp,
-// NavHeaderMockUp,
-// NavContentMockUp,
-// ContentMockUp,
-// FooterMockUp,
+  // HeaderMockUp,
+  // NavHeaderMockUp,
+  // NavContentMockUp,
+  // ContentMockUp,
+  // FooterMockUp,
 // } from '@mui-treasury/mockup/layout';
 import {
   Root,
@@ -69,7 +68,6 @@ const dashboard = () => {
               </Toolbar>
               {/* <ContentMockUp /> */}
             </Content>
-            {/* <App /> */}
           </>
         )}
       </Root>

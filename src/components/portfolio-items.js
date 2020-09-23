@@ -24,10 +24,10 @@ const portfolioItems = [
     },
     {
         title: 'コロナ感染者数グラフ',
-        desc: '作成は完了したもののbuildエラーになるため修正対応中\n',
+        desc: 'React Hooks + TypeScript + Redux Toolkit + Chart.js\nCOVID 19 API\n作成は完了したもののbuildエラーになるため修正対応中\n',
         img: './portfolio/Material.png',
         repo: 'https://github.com/Akihide-Tsue/TsuePortfolio/tree/master/src/pages/COVID19',
-        live: './dashboard',
+        live: 'COVID19/App',
         idx: 4
     },
     {
