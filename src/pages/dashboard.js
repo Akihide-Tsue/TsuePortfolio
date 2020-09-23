@@ -36,7 +36,7 @@ const SidebarTrigger = getSidebarTrigger(styled);
 
 const muiTreasuryScheme = getMuiTreasuryScheme();
 
-const MuiTreasuryLayout = () => {
+const dashboard = () => {
   return (
     <StylesProvider injectFirst>
       <CssBaseline />
@@ -80,4 +80,4 @@ const MuiTreasuryLayout = () => {
   );
 };
 
-export default MuiTreasuryLayout;
+export default dashboard;

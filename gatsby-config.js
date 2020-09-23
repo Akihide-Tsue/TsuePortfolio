@@ -20,13 +20,5 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
-    {
-      //プログレスバー表示
-      resolve: `gatsby-plugin-nprogress`,
-      options: {
-        color: `tomato`,
-        showSpinner: false,
-      },
-    },
   ]
 }

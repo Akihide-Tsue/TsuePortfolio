@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { makeStyles } from '@material-ui/core/styles';
 import headerImage from '../../../static/portfolio/headerIcon.png'
 import './NavContent.scss';
-import { CenterFocusStrong } from '@material-ui/icons';
+// import { CenterFocusStrong } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
   root: {
