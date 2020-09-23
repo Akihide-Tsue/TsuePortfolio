@@ -26,7 +26,7 @@ const portfolioItems = [
         title: 'コロナ感染者数グラフ',
         desc: '作成中',
         img: './portfolio/Material.png',
-        repo: '',
+        repo: 'https://github.com/Akihide-Tsue/TsuePortfolio/tree/master/src/pages/COVID19',
         live: './dashboard',
         idx: 4
     },

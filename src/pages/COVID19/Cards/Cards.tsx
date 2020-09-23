@@ -13,9 +13,11 @@ import { selectDaily } from "../covidSlice";
 const Cards: React.FC = () => {
   const daily = useSelector(selectDaily);
   return (
-    <div className={styles.container}>
+    // <div className={styles.container}>
+    <div className="container">
       <Grid container spacing={1} justify="center">
-        <Grid item xs={12} md={3} component={Card} className={styles.infected}>
+        {/* <Grid item xs={12} md={3} component={Card} className={styles.infected}> */}
+        <Grid item xs={12} md={3} component={Card} className="infected">
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               <MdLocalHospital />
@@ -31,7 +33,8 @@ const Cards: React.FC = () => {
             </Typography>
           </CardContent>
         </Grid>
-        <Grid item xs={12} md={3} component={Card} className={styles.recovered}>
+        {/* <Grid item xs={12} md={3} component={Card} className={styles.recovered}> */}
+        <Grid item xs={12} md={3} component={Card} className="recovered">
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               <AiFillLike /> Recovered persons
@@ -46,7 +49,8 @@ const Cards: React.FC = () => {
             </Typography>
           </CardContent>
         </Grid>
-        <Grid item xs={12} md={3} component={Card} className={styles.deaths}>
+        {/* <Grid item xs={12} md={3} component={Card} className={styles.deaths}> */}
+        <Grid item xs={12} md={3} component={Card} className="deaths">
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               <GiHastyGrave />

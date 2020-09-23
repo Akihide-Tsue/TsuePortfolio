@@ -16,6 +16,20 @@ module.exports = {
         path: `${__dirname}/src/`
       }
     },
+    {
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        ignore: [
+          '**/**.png',
+          '**/**.jpg',
+          '**/**.svg',
+          '**/**.ts',
+          '**/**.scss',
+          '**/**.json',
+        ],
+      },
+    },
     'gatsby-transformer-remark',
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

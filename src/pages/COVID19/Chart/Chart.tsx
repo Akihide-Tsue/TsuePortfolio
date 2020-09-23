@@ -1,34 +1,34 @@
-import React from "react";
-import styles from "./Chart";
-import { Line } from "react-chartjs-2";
+import React from "react"
+import styles from "./Chart"
+import { Line } from "react-chartjs-2"
 
-import { useSelector } from "react-redux";
-import { selectDaily } from "../covidSlice";
+import { useSelector } from "react-redux"
+import { selectDaily } from "../covidSlice"
 
 const Chart: React.FC = () => {
-  const daily = useSelector(selectDaily);
-  const dates = daily.map(({ Date }) => Date);
+  const daily = useSelector(selectDaily)
+  const dates = daily.map(({ Date }) => Date)
 
   const lineChart = daily[0] && (
     <Line
       data={{
-        labels: dates.map((date) => new Date(date).toDateString()),
+        labels: dates.map(date => new Date(date).toDateString()),
 
         datasets: [
           {
-            data: daily.map((data) => data.Confirmed),
+            data: daily.map(data => data.Confirmed),
             label: "Infected",
             borderColor: "#3333ff",
             showLine: false,
           },
           {
-            data: daily.map((data) => data.Recovered),
+            data: daily.map(data => data.Recovered),
             label: "Recovered",
             borderColor: "green",
             showLine: false,
           },
           {
-            data: daily.map((data) => data.Deaths),
+            data: daily.map(data => data.Deaths),
             label: "Deaths",
             borderColor: "#ff3370",
             showLine: false,
@@ -36,9 +36,10 @@ const Chart: React.FC = () => {
         ],
       }}
     />
-  );
+  )
 
-  return <div className={styles.container}>{lineChart}</div>;
-};
+  // return <div className={styles.container}>{lineChart}</div>;
+  return <div className="container">{lineChart}</div>
+}
 
-export default Chart;
+export default Chart

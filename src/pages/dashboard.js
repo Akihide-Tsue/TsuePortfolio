@@ -7,13 +7,13 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
 import App from './COVID19/App';
 
-import {
+// import {
   // HeaderMockUp,
   // NavHeaderMockUp,
   // NavContentMockUp,
   // ContentMockUp,
   // FooterMockUp,
-} from '@mui-treasury/mockup/layout';
+// } from '@mui-treasury/mockup/layout';
 import {
   Root,
   // getHeader,
