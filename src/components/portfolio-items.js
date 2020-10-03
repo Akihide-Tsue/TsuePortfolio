@@ -3,7 +3,7 @@ const portfolioItems = [
         title: 'ポートフォリオサイト',
         desc: '静的サイトジェネレーターを採用し高速に表示しています\n\nReact：6.14.7\nFW:Gatsby：2.24.63\nサーバー：Firebase\nレスポンシブデザイン',
         img: './portfolio/portfolioIMG.png',
-        repo: 'https://github.com/Akihide-Tsue/Tsue.com#readme',
+        repo: 'https://github.com/Akihide-Tsue/TsuePortfolio#readme',
         idx: 1
     },
     {
@@ -24,10 +24,10 @@ const portfolioItems = [
     },
     {
         title: 'コロナ感染者数グラフ',
-        desc: 'React Hooks + TypeScript + Redux Toolkit + Chart.js\nCOVID 19 API\n作成は完了したもののbuildエラーになるため修正対応中\n',
+        desc: 'React Hooks + TypeScript +\nRedux Toolkit + Chart.js\nCOVID 19 APIから情報を取得し\nグラフ表示するアプリ\n13~15:00はAPIがメンテナンスのため停止していることがあります',
         img: './portfolio/Material.png',
-        repo: 'https://github.com/Akihide-Tsue/TsuePortfolio/tree/master/src/pages/COVID19',
-        live: 'COVID19/App',
+        repo: 'https://github.com/Akihide-Tsue/covid19_chart',
+        live: 'https://covid19chart-tsue.web.app/',
         idx: 4
     },
     {

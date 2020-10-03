@@ -50,7 +50,7 @@
         font-size: 14px;
       }
     }
-    //吹き出し
+    //吹き出し 仮でコメントアウトで保存
     // .tooltip {
     //   position: relative;
     //   color: black;
@@ -104,7 +104,7 @@
       }
     }
   }
-  //©
+  // ©の部分
   .bottom {
     text-align: center;
     bottom: 0;
@@ -115,6 +115,7 @@
     margin-top: 10px;
   }
 }
+// TODO:レスポンシブ 別途対応
 // //550以下の場合
 // @media (max-width: 550px) {
 //   .tooltip::before,
@@ -128,7 +129,7 @@
 //     display: none;
 //   }
 // }
-// //50以上の場合
+// //550以上の場合
 // @media (min-width: 550px) {
 //   // .footer {
 //   //   .mobileTwitter {

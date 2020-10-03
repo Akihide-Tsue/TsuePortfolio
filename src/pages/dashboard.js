@@ -6,13 +6,6 @@ import { StylesProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
 
-// import {
-  // HeaderMockUp,
-  // NavHeaderMockUp,
-  // NavContentMockUp,
-  // ContentMockUp,
-  // FooterMockUp,
-// } from '@mui-treasury/mockup/layout';
 import {
   Root,
   // getHeader,
@@ -42,6 +35,7 @@ const dashboard = () => {
       <Root scheme={muiTreasuryScheme}>
         {({ state: { sidebar } }) => (
           <>
+            {/* TODO：完成後、コメントアウト削除 */}
             {/* <Header>
               <Toolbar>
                 <SidebarTrigger sidebarId="primarySidebar" />

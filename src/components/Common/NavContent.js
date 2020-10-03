@@ -21,6 +21,7 @@ export default function NavContent() {
   const [selectedIndex, setSelectedIndex] = React.useState(1);
 
   const handleListItemClick = (event, index) => {
+    window.open('https://covid19chart-tsue.web.app', '_blank');
     setSelectedIndex(index);
   };
 

@@ -4,13 +4,12 @@
 https://tsue-gatsby.web.app
 
 ## Features📎
-1. Minimalistic display of portfolio items, right at landing Page.
-2. About Section with gatsby Image.
-3. Auto-generated blog pages from Markdown files at blog folder.
+1. Minimalistic display of portfolio items.
+2. Auto-generated blog pages from Markdown files at blog folder.
+3. Array of portfolio items, very easy to modify and very quick to add new items.
 4. Gatsby-Config to change title.
 5. Social Media links.
-6. Array of portfolio items, very easy to modify and very quick to add new items.
-7. Responsive design with Sass.
+6. Responsive design with Sass.
 
 ## Web Performance Tests🕐
 Lighthouse Report - [WebPageTest](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Ftsue-gatsby.web.app%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
@@ -19,7 +18,7 @@ Lighthouse Report - [WebPageTest](https://googlechrome.github.io/lighthouse/view
 ### Create a Gatsby site
 Use the Gatsby CLI to create a new site,
 ```sh
-gatsby new <directory name> https://github.com/Akihide-Tsue/Tsue.com
+gatsby new <directory name> https://github.com/Akihide-Tsue/TsuePortfolio
 ```
 ### Start Developing
 Navigate into your new site’s directory and start it up.
