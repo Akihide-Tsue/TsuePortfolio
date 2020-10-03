@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[22],{GIek:function(n,t,u){"use strict";function c(n,t){"function"==typeof n?n(t):n&&(n.current=t)}u.d(t,"a",(function(){return c}))},bfFb:function(n,t,u){"use strict";u.d(t,"a",(function(){return o}));var c=u("q1tI"),e=u("GIek");function o(n,t){return c.useMemo((function(){return null==n&&null==t?null:function(u){Object(e.a)(n,u),Object(e.a)(t,u)}}),[n,t])}}}]);
-//# sourceMappingURL=component---src-pages-covid-19-switch-country-switch-country-tsx-7e0e7e9b55288a3747da.js.map

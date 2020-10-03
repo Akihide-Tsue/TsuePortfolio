@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{207:function(o,e,u){o.exports={main:"About-module--main--2sYPE",logoContainer:"About-module--logoContainer--DsJA4",logo:"About-module--logo--3iaqm",izquierda:"About-module--izquierda--1JEtP",imagen:"About-module--imagen--3zkPZ",texto:"About-module--texto--1fwwV",iconos:"About-module--iconos--3gsZH",derecha:"About-module--derecha--2kbno",social:"About-module--social--U1WGV",socialContainer:"About-module--social-container--3uTqO"}},209:function(o,e,u){}}]);
-//# sourceMappingURL=styles-9b7535e653272ca3e539.js.map
