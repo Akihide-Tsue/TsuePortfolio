@@ -16,4 +16,3 @@ This is the first post
 7. SEO対策,RSS Feedlyに追加可能に
 8. PWA対応
 9. Resume履歴書をPDFで表示可能に
-10. TBN
