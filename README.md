@@ -39,6 +39,7 @@ GATSBY_GRAPHQL_IDE=playground.
 This will allow you to use Playground for your graphql IDE.
 ### Firebase Deploy
 ```sh
+gatsby clean
 gatsby build
 firebase deploy
 ```
